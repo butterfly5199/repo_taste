@@ -1,5 +1,6 @@
 package com.taste.module.codegroup;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,51 +8,47 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class CodeGroupCotroller {
 
-//	@Autowired
-//	CodeGroupService codeGroupService;
-//	
+	@Autowired
+	CodeGroupService codeGroupService;
+	
 	@RequestMapping(value="/codegroup/codegroupXdmList")
 	public String codegroupXdmList(Model model) {
-		model.addAllAttributes("list",codegroupService.selectList());
-		return "codegroup/codegroupXdmList";
+		model.addAttribute("list", codeGroupService.selectList());
+		return "/xdm/codegroup/codegroupXdmList";
 	}
 	
 //	@RequestMapping(value = "/codegroup/codegroupXdmView")
-//	public String codegroupXdmView(Model model, Group1Dto group1Dto) {
+//	public String codegroupXdmView(Model model, CodeGroupDto codegroupDto) {
 //	
 //				
-//		model.addAttribute("item", group1Service.selectOne(group1Dto));		
-//		return "group1/group1XdmView";
+//		model.addAttribute("item", codeGroupService.selectOne(codegroupDto));		
+//		return "/xdm/codegroup/codegroupXdmView";
 //	}
+		
+	
+	@RequestMapping(value = "/codegroup/codegroupXdmForm")
+	public String codegroupXdmForm() {
+		
+		return "/xdm/codegroup/codegroupXdmForm";
+	}
+		
+	@RequestMapping(value = "/codegroup/codegroupXdmInst")
+	public String codegroupXdmInst(CodeGroupDto codegroupDto) {
+//		System.out.println("codegroupDto.getifcgseq(): " + codegroupDto.getifcgseq());
+		System.out.println("codegroupDto.getifcgName(): " + codegroupDto.getIfcgName());
+		
+		codeGroupService.insert(codegroupDto);
+//		System.out.println("codegroupDto.getifcgseq(): " + codegroupDto.getifcgseq());
+		
+		return "redirect:/xdm/codegroup/codegroupXdmList";	
+	}
+	
+//	@RequestMapping(value = "/codegroup/codegroupXdmMfom")
+//	public String codegroupXdmMfom(CodeGroupDto codegroupDto, Model model) {
 //		
-//	
-//	@RequestMapping(value = "/group1/group1XdmForm")
-//	public String group1XdmForm() {
+//		model.addAttribute("item", codeGroupService.selectOne(codegroupDto));	
 //		
-//		return "group1/group1XdmForm";
-//	}
-//	
-//	
-//	@RequestMapping(value = "/group1/group1XdmInst")
-//	public String group1XdmInst(Group1Dto group1Dto) {
-//		System.out.println("group1Dto.getSeq(): " + group1Dto.getSeq());
-//		System.out.println("group1Dto.getName(): " + group1Dto.getName());
-//		
-//		group1Service.insert(group1Dto);
-//		System.out.println("group1Dto.getSeq(): " + group1Dto.getSeq());
-//		
-//		return "redirect:/group1/group1XdmList";	
-//	}
-//	
-//	@RequestMapping(value = "/group1/group1XdmMfom")
-//	public String group1XdmMfom(Group1Dto group1Dto, Model model) {
-//		
-//		model.addAttribute("item", group1Service.selectOne(group1Dto));	
-//		
-//		return "/group1/group1XdmMfom";
+//		return "/xdm/codegroup/codegroupXdmMfom";
 //	}	
-	
-	
-	
-	
+//	
 }

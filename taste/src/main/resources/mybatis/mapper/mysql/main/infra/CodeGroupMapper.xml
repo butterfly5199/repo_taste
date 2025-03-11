@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taste.infra.codegroup.CodeGroupDao">
+<mapper namespace="com.taste.module.codegroup.CodeGroupDao">
 
-	<resultMap id="resultMapObj" type="com.a5a5lab.fapp.group1.Group1Dto"></resultMap>
+	<resultMap id="resultMapObj" type="com.taste.module.codegroup.CodeGroupDto"></resultMap>
 	  
 	<select id="selectList" resultMap="resultMapObj">
 		SELECT
@@ -16,8 +16,8 @@
 		FROM
 		    codeGroup
 		WHERE 1=1	
-			AND delNy = 0	
-		ORDER BY seq DESC	
+			
+		ORDER BY ifcgseq DESC	
 	</select>	
 	
 	<select id="selectOne" resultMap="resultMapObj">
@@ -33,37 +33,6 @@
 		WHERE 1=1
 		AND ifcgseq=#{ifcgseq}
 	</select>
-	
-	<insert id="insert">
-		INSERT INTO codeGroup
-		(
-			ifcgName
-		)
-		VALUES
-		(
-			#{ifcgName}
-		)
-		<selectKey resultType="String" keyProperty="seq" order="AFTER">
-			SELECT last_insert_id()
-		</selectKey>
-	</insert>	
-	
-	 
-	 <update id="update">
-	 	UPDATE codeGroup SET
-	 		ifcgName=#{ifcgName}
-	 	WHERE ifcgseq=#{ifcgseq}	
-	 </update>	
-	 
-	 <delete id="delete">
-		 DELETE FROM codeGroup
-		 where ifcgseq=#{ifcgseq}
-	 </delete>
-	 
-	 <update id="uelete">
-	 	UPDATE codeGroup SET
-	 		delNy=1
-	 	WHERE ifcgseq=#{ifcgseq}	
-	 </update>
+
 	  
 </mapper>

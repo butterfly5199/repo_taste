@@ -11,11 +11,11 @@ public class CodeGroupService {
 	@Autowired
 	CodeGroupDao codeGroupDao; 
 	
-	public List<CodeGroupDto> selecList() {
+	public List<CodeGroupDto> selectList() {
 		return codeGroupDao.selectList();
 	}
 	
-	public CodeGroupDto selecOne(CodeGroupDto codeGroupDto) {
+	public CodeGroupDto selectOne(CodeGroupDto codeGroupDto) {
 		return codeGroupDao.selectOne(codeGroupDto);
 	}
 	
