@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+<div th:replace="~{xdm/include/formheader :: formheader}"></div>
 <div th:replace="~{xdm/include/formhead :: formhead}"></div>
+<div th:replace="~{xdm/include/formsidebar :: formsidebar}"></div>
 
     <div id="main" class="container">
       <form>
@@ -33,25 +35,25 @@
             <div class="col-3">
               <div class="form-group">
                 <label for="exampleInputEmail1"> 코드그룹 이름</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
               </div>
             </div>
 			<div class="col-3">
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">코드<span style="color: red;">*</span></label>
-			    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
+			    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="&nbsp;&nbsp;영대소문자,숫자">
 			  </div>
 			</div>
             <div class="col-3">
               <div class="form-group">
                 <label for="exampleInputEmail1">대체코드(ANOTHER)<span style="color: red;">*</span></label>
-                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
+                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="&nbsp;&nbsp;영대소문자,숫자">
               </div>
             </div>
             <div class="col-3">
               <div class="form-group">
                 <label for="exampleInputEmail1">코드이름</label>
-                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
               </div>
             </div>
           </div>
