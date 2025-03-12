@@ -5,6 +5,7 @@
 <div th:replace="~{xdm/include/formhead :: formhead}"></div>
 <div th:replace="~{xdm/include/formsidebar :: formsidebar}"></div>
 
+<body>
     <div id="main" class="container">
       <form>
         <article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: lightgrey;">
@@ -78,7 +79,8 @@
 			    </select>
 			  </div>
 			</div>
-			
+
+					
             <!--<div class="col-3">
               <div class="form-group">
                 <label for="codeLanguage1">순서</label>
@@ -103,11 +105,19 @@
           </div> -->
       </form>
     </div>
+	<br>
+	
+	<div class="row">
+	    <div class="col-6" style="text-align: right;">
+	        <button type="button" class="btn btn-success" style="font-weight: bold; position: center" onclick="location.href='codegroupXdmList'">저장</button>
+	    </div>
+		<article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: lightgrey;">
+	</div>
+	<br>
 
-  </main><!-- End #main -->
-  
   <div th:replace="~{xdm/include/formfooter :: formfooter}"></div>
-  
+
+</body>   
 </html>
 
 <!-- listb 변수 : Group1Controller.java 파일과 매칭상태 비교해 볼 것 -->
