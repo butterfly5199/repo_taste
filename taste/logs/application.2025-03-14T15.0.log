@@ -1,0 +1,262 @@
+2025-03-14T15:00:27.797 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+121. SELECT COUNT(*)
+
+		FROM codegroup a
+		WHERE 1=1
+ {executed in 36 msec} 
+2025-03-14T15:00:27.801 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+121. SELECT
+
+			a.ifcgseq,
+			a.ifcgUseNy,
+			a.ifcgCode,
+			a.ifcgName,
+			a.ifcgAnotherCode,
+			a.ifcgDelNy
+
+		FROM codegroup a
+		WHERE 1=1
+
+		ORDER BY a.ifcgseq DESC
+ {executed in 1 msec} 
+2025-03-14T15:00:36.811 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+121. INSERT INTO codegroup(
+		ifcgUseNy,
+		ifcgCode,
+		ifcgName,
+		ifcgAnotherCode,
+		ifcgDelNy
+	) values(
+		NULL,
+	    NULL,
+	    NULL,
+	    NULL,
+	    NULL
+	)
+ {executed in 4 msec} 
+2025-03-14T15:01:55.189 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-03-14T15:01:55.194 [Thread-219] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-03-14T15:01:55.195 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:01:55.199 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-03-14T15:01:55.200 [Thread-219] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:01:55.204 [Thread-219] INFO c.z.h.HikariDataSource - HikariPool-11 - Shutdown initiated... 
+2025-03-14T15:01:55.227 [Thread-219] INFO c.z.h.HikariDataSource - HikariPool-11 - Shutdown completed. 
+2025-03-14T15:01:55.355 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 1556 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:01:55.355 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:01:55.813 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:01:55.816 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:01:55.817 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:01:55.817 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:01:55.840 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:01:55.840 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 480 ms 
+2025-03-14T15:01:56.104 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-03-14T15:01:56.118 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:01:56.126 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+2025-03-14T15:01:56.134 [restartedMain] INFO c.t.TasteApplication - Started TasteApplication in 0.854 seconds (process running for 12430.781) 
+2025-03-14T15:01:56.137 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-03-14T15:01:58.760 [http-nio-8080-exec-1] INFO o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2025-03-14T15:01:58.760 [http-nio-8080-exec-1] INFO o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2025-03-14T15:01:58.761 [http-nio-8080-exec-1] INFO o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+2025-03-14T15:01:58.764 [http-nio-8080-exec-1] INFO c.z.h.HikariDataSource - HikariPool-12 - Starting... 
+2025-03-14T15:01:58.806 [http-nio-8080-exec-1] INFO c.z.h.p.HikariPool - HikariPool-12 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1187724e 
+2025-03-14T15:01:58.806 [http-nio-8080-exec-1] INFO c.z.h.HikariDataSource - HikariPool-12 - Start completed. 
+2025-03-14T15:01:58.810 [http-nio-8080-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+131. SELECT COUNT(*)
+
+		FROM codegroup a
+		WHERE 1=1
+ {executed in 3 msec} 
+2025-03-14T15:01:58.816 [http-nio-8080-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+131. SELECT
+
+			a.ifcgseq,
+			a.ifcgUseNy,
+			a.ifcgCode,
+			a.ifcgName,
+			a.ifcgAnotherCode,
+			a.ifcgDelNy
+
+		FROM codegroup a
+		WHERE 1=1
+
+		ORDER BY a.ifcgseq DESC
+ {executed in 2 msec} 
+2025-03-14T15:02:09.584 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+131. INSERT INTO codegroup(
+		ifcgUseNy,
+		ifcgCode,
+		ifcgName,
+		ifcgAnotherCode,
+		ifcgDelNy
+	) values(
+		NULL,
+	    NULL,
+	    NULL,
+	    NULL,
+	    NULL
+	)
+ {executed in 6 msec} 
+2025-03-14T15:03:42.883 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-03-14T15:03:42.884 [Thread-223] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-03-14T15:03:42.885 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:03:42.888 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-03-14T15:03:42.888 [Thread-223] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:03:42.890 [Thread-223] INFO c.z.h.HikariDataSource - HikariPool-12 - Shutdown initiated... 
+2025-03-14T15:03:42.897 [Thread-223] INFO c.z.h.HikariDataSource - HikariPool-12 - Shutdown completed. 
+2025-03-14T15:03:42.990 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 1556 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:03:42.991 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:03:43.289 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:03:43.291 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:03:43.291 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:03:43.291 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:03:43.312 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:03:43.313 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 319 ms 
+2025-03-14T15:03:43.538 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-03-14T15:03:43.550 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:03:43.554 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+2025-03-14T15:03:43.561 [restartedMain] INFO c.t.TasteApplication - Started TasteApplication in 0.617 seconds (process running for 12538.208) 
+2025-03-14T15:03:43.563 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-03-14T15:04:11.815 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-03-14T15:04:11.817 [Thread-227] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-03-14T15:04:11.817 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:11.820 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-03-14T15:04:11.820 [Thread-227] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:11.909 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 1556 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:04:11.910 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:04:12.149 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:04:12.150 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:12.150 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:04:12.150 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:04:12.171 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:04:12.172 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 259 ms 
+2025-03-14T15:04:12.311 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-03-14T15:04:12.320 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:12.324 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+2025-03-14T15:04:12.329 [restartedMain] INFO c.t.TasteApplication - Started TasteApplication in 0.462 seconds (process running for 12566.975) 
+2025-03-14T15:04:12.330 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-03-14T15:04:25.003 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-03-14T15:04:25.004 [Thread-231] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-03-14T15:04:25.005 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:25.007 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-03-14T15:04:25.007 [Thread-231] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:25.081 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 1556 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:04:25.081 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:04:25.312 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:04:25.313 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:25.313 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:04:25.313 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:04:25.331 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:04:25.331 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 248 ms 
+2025-03-14T15:04:25.473 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-03-14T15:04:25.486 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:04:25.490 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+2025-03-14T15:04:25.497 [restartedMain] INFO c.t.TasteApplication - Started TasteApplication in 0.447 seconds (process running for 12580.144) 
+2025-03-14T15:04:25.498 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-03-14T15:05:15.499 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 16120 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:05:15.501 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:05:15.556 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2025-03-14T15:05:15.556 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2025-03-14T15:05:16.771 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:05:16.787 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:05:16.789 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:05:16.789 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:05:16.843 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:05:16.844 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1287 ms 
+2025-03-14T15:05:17.674 [restartedMain] WARN o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+2025-03-14T15:05:17.696 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:05:17.704 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
+2025-03-14T15:05:17.724 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-03-14T15:05:17.751 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+ 
+2025-03-14T15:05:44.772 [restartedMain] INFO c.t.TasteApplication - Starting TasteApplication using Java 21.0.5 with PID 16252 (C:\factory\ws_sts4_4270\repo_taste\taste\bin\main started by i7C-56 in C:\factory\ws_sts4_4270\repo_taste\taste) 
+2025-03-14T15:05:44.774 [restartedMain] INFO c.t.TasteApplication - No active profile set, falling back to 1 default profile: "default" 
+2025-03-14T15:05:44.817 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2025-03-14T15:05:44.817 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2025-03-14T15:05:45.877 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+2025-03-14T15:05:45.890 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:05:45.892 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-03-14T15:05:45.892 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36] 
+2025-03-14T15:05:45.939 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-03-14T15:05:45.939 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1121 ms 
+2025-03-14T15:05:46.658 [restartedMain] WARN o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+2025-03-14T15:05:46.678 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2025-03-14T15:05:46.684 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
+2025-03-14T15:05:46.702 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-03-14T15:05:46.721 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+ 
+2025-03-14T15:06:05.763 [http-nio-8080-exec-2] INFO o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2025-03-14T15:06:05.763 [http-nio-8080-exec-2] INFO o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2025-03-14T15:06:05.765 [http-nio-8080-exec-2] INFO o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+2025-03-14T15:06:07.841 [http-nio-8080-exec-7] INFO c.z.h.HikariDataSource - HikariPool-13 - Starting... 
+2025-03-14T15:06:07.887 [http-nio-8080-exec-7] INFO c.z.h.p.HikariPool - HikariPool-13 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@106155e1 
+2025-03-14T15:06:07.887 [http-nio-8080-exec-7] INFO c.z.h.HikariDataSource - HikariPool-13 - Start completed. 
+2025-03-14T15:06:07.896 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT COUNT(*)
+
+		FROM codegroup a
+		WHERE 1=1
+ {executed in 8 msec} 
+2025-03-14T15:06:07.902 [http-nio-8080-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT
+
+			a.ifcgseq,
+			a.ifcgUseNy,
+			a.ifcgCode,
+			a.ifcgName,
+			a.ifcgAnotherCode,
+			a.ifcgDelNy
+
+		FROM codegroup a
+		WHERE 1=1
+
+		ORDER BY a.ifcgseq DESC
+ {executed in 2 msec} 
+2025-03-14T15:06:11.498 [http-nio-8080-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT COUNT(*)
+
+		FROM codegroup a
+		WHERE 1=1
+ {executed in 3 msec} 
+2025-03-14T15:06:11.500 [http-nio-8080-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+141. SELECT
+
+			a.ifcgseq,
+			a.ifcgUseNy,
+			a.ifcgCode,
+			a.ifcgName,
+			a.ifcgAnotherCode,
+			a.ifcgDelNy
+
+		FROM codegroup a
+		WHERE 1=1
+
+		ORDER BY a.ifcgseq DESC
+ {executed in 1 msec} 
