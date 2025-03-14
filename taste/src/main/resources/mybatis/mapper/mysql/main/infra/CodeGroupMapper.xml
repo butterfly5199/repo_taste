@@ -4,34 +4,55 @@
 <mapper namespace="com.taste.module.codegroup.CodeGroupDao">
 
 	<resultMap id="resultMapObj" type="com.taste.module.codegroup.CodeGroupDto"></resultMap>
+	
+	<sql id="selectCommon">
+		FROM codegroup a
+		WHERE 1=1
+	</sql>
+	
+	<sql id="selectCommonColumn">
+			a.ifcgseq,
+			a.ifcgUseNy,
+			a.ifcgCode,
+			a.ifcgName,
+			a.ifcgAnotherCode,
+			a.ifcgDelNy
+	</sql>
+	
+	<select id="selectOneCount" resultType="Integer">
+		SELECT COUNT(*)
+		<include refid="selectCommon"/>
+	</select>		
 	  
 	<select id="selectList" resultMap="resultMapObj">
 		SELECT
-			ifcgseq,
-			ifcgUseNy,
-			ifcgCode,
-			ifcgName,
-			ifcgAnotherCode,
-			ifcgDelNy
-		FROM
-		    codeGroup
-		WHERE 1=1	
+			<include refid="selectCommonColumn"/>
+		<include refid="selectCommon"/>
 			
-		ORDER BY ifcgseq DESC	
+		ORDER BY a.ifcgseq DESC	
 	</select>	
+	
+	<insert id="insert">
+	INSERT INTO codegroup(
+		ifcgUseNy,
+		ifcgCode,
+		ifcgName,
+		ifcgAnotherCode,
+		ifcgDelNy
+	) values(
+		#{ifcgUseNy},
+	    #{ifcgCode},
+	    #{ifcgName},
+	    #{ifcgAnotherCode},
+	    #{ifcgDelNy}
+	)	
+	</insert>
 	
 	<select id="selectOne" resultMap="resultMapObj">
 		SELECT
-			ifcgseq,
-			ifcgUseNy,
-			ifcgCode,
-			ifcgName,
-			ifcgAnotherCode,
-			ifcgDelNy
-		FROM
-			codeGroup
-		WHERE 1=1
-		AND ifcgseq=#{ifcgseq}
+			<include refid="selectCommonColumn"/>
+		<include refid="selectCommon"/>
+		AND a.ifcgseq=#{ifcgseq}
 	</select>
 
 	  

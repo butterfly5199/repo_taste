@@ -15,6 +15,11 @@ public class CodeGroupService {
 		return codeGroupDao.selectList();
 	}
 	
+	public int selectOneCount() {
+		return codeGroupDao.selectOneCount();
+	}
+	
+	
 	public CodeGroupDto selectOne(CodeGroupDto codeGroupDto) {
 		return codeGroupDao.selectOne(codeGroupDto);
 	}
@@ -23,16 +28,16 @@ public class CodeGroupService {
 		return codeGroupDao.insert(codeGroupDto);
 	}
 	
-//	public int update(CodeGroupDto codeGroupDto) { 
-//		return codeGroupDao.update(codeGroupDto); 
-//	}
-//	
-//	public int delete(CodeGroupDto codeGroupDto) { 
-//		return codeGroupDao.delete(codeGroupDto); 
-//	}
-//	
-//	public int uelete(CodeGroupDto codeGroupDto) {
-//		return codeGroupDao.uelete(codeGroupDto); 
-//	}
+	public int update(CodeGroupDto codeGroupDto) { 
+		return codeGroupDao.update(codeGroupDto); 
+	}
+	
+	public int delete(CodeGroupDto codeGroupDto) { 
+		return codeGroupDao.delete(codeGroupDto); 
+	}
+	
+	public int uelete(CodeGroupDto codeGroupDto) {
+		return codeGroupDao.uelete(codeGroupDto); 
+	}
 	
 }

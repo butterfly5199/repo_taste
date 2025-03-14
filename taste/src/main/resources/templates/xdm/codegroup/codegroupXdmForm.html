@@ -7,7 +7,7 @@
 
 <body>
     <div id="main" class="container">
-      <form>
+      <form action="/codegroup/codegroupXdmInst" id="form">
         <article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: lightgrey;">
           <h4 style="font-weight: bold; color: black;">기본정보</h4>
         </article>
@@ -109,13 +109,14 @@
 	
 	<div class="row">
 	    <div class="col-6" style="text-align: right;">
-	        <button type="button" class="btn btn-success" style="font-weight: bold; position: center" onclick="location.href='codegroupXdmList'">저장</button>
+	        <button type="button" class="btn btn-success" id="btnSave" style="font-weight: bold; position: center">저장</button>
 	    </div>
 		<article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: lightgrey;">
 	</div>
 	<br>
 
   <div th:replace="~{xdm/include/formfooter :: formfooter}"></div>
+  
 
 </body>   
 </html>
